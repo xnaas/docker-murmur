@@ -1,4 +1,4 @@
-FROM alpine as builder
+FROM alpine AS builder
 
 WORKDIR /build
 
@@ -6,7 +6,6 @@ RUN apk add --no-cache curl tar
 RUN curl -sSL https://www.mumble.info/downloads/linux-static-server | tar xj --strip 1
 
 FROM alpine
-LABEL maintainer='DerEnderKeks'
 
 COPY --from=builder /build/murmur.ini /templates/murmur.ini
 COPY --from=builder /build/murmur.x86 /usr/local/bin/murmur
