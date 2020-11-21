@@ -8,5 +8,6 @@ Forked from [DerEnderKeks/docker-murmur](https://github.com/DerEnderKeks/docker-
 * The final image is based on alpine and additionally only contains the murmur binary, the default config file, and a tiny start script.
 * Data is stored in the `/data` volume. When no config file is present the default one will be copied there.
 * The image exposes UDP and TCP port `64738`.
+* Default user is `1000`.
 
 Note: run this in [host network mode](https://docs.docker.com/network/host/) if you need functional IPv6.
