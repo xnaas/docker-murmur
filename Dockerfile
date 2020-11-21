@@ -12,14 +12,14 @@ COPY --from=builder /build/murmur.x86 /usr/local/bin/murmur
 COPY ./start.sh /usr/local/bin/murmur-wrapper
 RUN chmod +x /usr/local/bin/murmur-wrapper
 
-RUN mkdir -m770 /data
-RUN chown 65521 /data
+# RUN mkdir -m770 /data
+# RUN chown 65521 /data
 
 VOLUME /data
 
 EXPOSE 64738/tcp
 EXPOSE 64738/udp
 
-USER 65521
+USER 1000
 
 ENTRYPOINT ["/usr/local/bin/murmur-wrapper"]
