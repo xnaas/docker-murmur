@@ -1,4 +1,4 @@
-# docker-murmur [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xnaas/murmur?style=flat-square)](https://hub.docker.com/repository/docker/xnaas/murmur)
+# docker-murmur [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xnaas/murmur?style=flat)](https://hub.docker.com/repository/docker/xnaas/murmur)
 
 Forked from [DerEnderKeks/docker-murmur](https://github.com/DerEnderKeks/docker-murmur). Docker version of [Murmur](https://github.com/mumble-voip/mumble#linuxunix), the server component of Mumble.
 
