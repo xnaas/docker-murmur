@@ -1,8 +1,8 @@
-name: 'build'
+name: 'Scheduled Build'
 
 on:
-  push:
-    branches: ['master']
+  schedule:
+    - cron: '45 5 * * 1'
 
 jobs:
   build-and-push-image:
